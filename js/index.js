@@ -117,7 +117,7 @@ function render(array) {
 	searchListNode.innerHTML = '';
 
 	array.forEach((item) => {
-		const movieUrl = `http://127.0.0.1:5500/pages/movie.html?i=${item.imdbID}`;
+		const movieUrl = `https://petr791.github.io/Movie-Search-App/pages/movie.html?i=${item.imdbID}`;
 
 		//создание элементов и их атрибутов
 		const itemNode = createCustomElement('li', {
