@@ -22,6 +22,10 @@ function showSearchMessage() {
 function changeSearchBtnBgColor() {
 	searchBtnNode.classList.add('dark-bg');
 }
+// функция. Возвращение цвета кнопки поиска
+function returnSearchBtnBgColor() {
+	searchBtnNode.classList.remove('dark-bg');
+}
 
 // ункция. Плавное появление элементов списка
 function showItems(item) {
@@ -102,6 +106,7 @@ async function getMovies(movieTitle) {
 	} catch (error) {
 		console.log('При запросе возникла ошибка: ' + error);
 		//alert('Ошибка при выполнении запроса!');
+		returnSearchBtnBgColor();
 		setRequestMessageText();
 		showSearchMessage();
 		return false;
