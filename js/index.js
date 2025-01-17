@@ -50,9 +50,9 @@ function getMovieFromUser() {
 function showMovies() {
 	// проверка
 	if (checkInputField()) {
-		//massageNode.innerText = 'Введите название фильма';
+		hideSearchMessage();
 		setValidationMessageText();
-		massageNode.classList.add('show');
+		showSearchMessage();
 		return;
 	} else {
 		const movieTitle = getMovieFromUser();
@@ -67,7 +67,7 @@ function showMovies() {
 function smoothShow() {
 	if (searchListNode.childNodes) {
 		const items = document.querySelectorAll('.found-item');
-		console.log(items);
+
 		if (items) {
 			items.forEach(item => {
 				showItems(item);
@@ -182,15 +182,16 @@ searchBtnNode.addEventListener('click', showMovies);
 document.body.addEventListener('click', function (e) {
 	if (e.target !== searchBtnNode && searchInputNode.value.trim() === '') {
 		massageNode.innerText = '';
-		massageNode.classList.remove('show');
+		hideSearchMessage();
 	}
 	if (e.target !== searchBtnNode && searchInputNode.value !== '') {
-		console.log('body click 2');
 		massageNode.innerText = '';
-		massageNode.classList.add('show');
+		showSearchMessage();
 	}
 });
 
+// хендлер на событие input. Для плавности появления сообщения
+searchInputNode.addEventListener('input', hideSearchMessage);
 
 //*********************************** */
 
