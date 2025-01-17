@@ -188,6 +188,7 @@
         padding-top: 75px;
     }
     .search__row {
+        padding-left: 0px;
         gap: 18px;
     }
     .search__input-wrapper {

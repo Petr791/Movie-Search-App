@@ -21,7 +21,7 @@ a {
 .show {
     opacity: 1;
     height: auto;
-    transition: opacity 2s ease, height 0s ease 0s;
+    transition: opacity 1s ease, height 0s ease 0s;
 }
 
 
