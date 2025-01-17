@@ -1,0 +1,46 @@
+@import url('./fonts.css');
+@import url('./search-page.css');
+@import url('./movie-page.css');
+body {
+    min-height: 100vh;
+    font-family: "Inter-local", sans-serif;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.show {
+    opacity: 1;
+    height: auto;
+    transition: opacity 2s ease, height 0s ease 0s;
+}
+
+
+/* media queries */
+
+@media (hover: hover) {}
+
+@media (max-width: 961px) {}
+
+@media (max-width: 850px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 590px) {}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 350px) {}
