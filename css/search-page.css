@@ -57,11 +57,14 @@
     background-color: #000000;
 }
 
+.search__message-wrapper {
+    min-height: 40px;
+}
+
 .search__message {
     margin-top: 15px;
     margin-bottom: 15px;
     padding-left: 193px;
-    min-height: 40px;
     font-size: 32px;
     line-height: 38px;
     font-style: italic;
@@ -205,11 +208,14 @@
         font-size: 28px;
         line-height: 34px;
     }
+    .search__message-wrapper {
+        min-height: 36px;
+    }
     .search__message {
         margin-top: 12px;
         margin-bottom: 12px;
         padding-left: 0px;
-        min-height: 36px;
+        /* min-height: 36px; */
         font-size: 28px;
         line-height: 34px;
     }
@@ -254,8 +260,11 @@
         font-size: 24px;
         line-height: 28px;
     }
-    .search__message {
+    .search__message-wrapper {
         min-height: 28px;
+    }
+    .search__message {
+        /* min-height: 28px; */
         font-size: 22px;
         line-height: 26px;
     }
@@ -297,10 +306,13 @@
     .search {
         padding-top: 25px;
     }
-    .search__message {
+    .se.search__message-wrapper {
+        min-height: 20px;
+    }
+    arch__message {
         margin-top: 7px;
         margin-bottom: 7px;
-        min-height: 20px;
+        /* min-height: 20px; */
         font-size: 16px;
         line-height: 18px;
     }
